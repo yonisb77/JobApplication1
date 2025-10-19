@@ -7,7 +7,7 @@
 
         public void ShowStatistics()
         {
-            Console.WriteLine($"Totalt antal ansökningar: {ApplicationList.Count}");
+            Console.WriteLine($"Totalt antal ansökningar {ApplicationList.Count}");
 
             var antal = ApplicationList
                 .GroupBy(a => a.AnsökningsStatus)
