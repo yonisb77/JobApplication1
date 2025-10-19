@@ -36,7 +36,7 @@ namespace JobAPPTracker
                 Console.WriteLine($"Svar mottaget: {SvarsTid.Value}");
             else
                 Console.WriteLine("Svar: ej mottaget");
-            return;
+            
         }
     }
 }
