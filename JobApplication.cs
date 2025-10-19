@@ -21,6 +21,8 @@ namespace JobAPPTracker
             Console.WriteLine($" Det har gått {dagar} dagar sedan ansökan skickades till {FöretagsNamn}. ");
         }
 
+
+        //Ansökningsoversikt
         public void GetSummary()
         {
             Console.WriteLine($"FöretagsNamn: {FöretagsNamn}");
