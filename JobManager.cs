@@ -88,7 +88,7 @@
 
         public void UpdateStatus()
         {
-            Console.Write("Ange företagsnamn att uppdatera: ");
+            Console.Write("skriv företagsnamnet du vill uppdatera: ");
             string namn = Console.ReadLine();
 
             var application = ApplicationList.FirstOrDefault(a => a.FöretagsNamn.Equals(namn, StringComparison.OrdinalIgnoreCase));
@@ -121,7 +121,7 @@
 
         public void RemoveApplication()
         {
-            Console.Write("Ange företagsnamn att ta bort: ");
+            Console.Write("Ange företagsnamn som du vill ta bort: ");
             string namn = Console.ReadLine();
 
             var tabort = ApplicationList.FirstOrDefault(a => a.FöretagsNamn.Equals(namn, StringComparison.OrdinalIgnoreCase));
@@ -129,7 +129,7 @@
             if (tabort != null)
             {
                 ApplicationList.Remove(tabort);
-                Console.WriteLine("Ansökan borttagen.");
+                Console.WriteLine("Ansökan har tagits bort");
             }
             else
             {
