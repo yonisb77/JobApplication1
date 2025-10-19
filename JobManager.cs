@@ -1,6 +1,6 @@
 ﻿namespace JobAPPTracker
 {
-
+    //Jobbklass för att hantera jobansökningar
     public class JobManager
     {
         List<JobApplication> ApplicationList = new List<JobApplication>();
@@ -49,7 +49,7 @@
 
         }
 
-
+        //visar alla ansökningar
         public void ShowAll()
         {
 
@@ -70,6 +70,7 @@
             }
         }
 
+        //visar antal ansökningar
         public void ShowStatistics()
         {
             Console.WriteLine($"Totalt antal ansökningar: {ApplicationList.Count}");
@@ -86,6 +87,7 @@
 
         }
 
+        //Uppdaterar status på ansökan av Rekryteraren
         public void UpdateStatus()
         {
             Console.Write("skriv företagsnamnet du vill uppdatera: ");
@@ -118,7 +120,7 @@
             }
         }
 
-
+        //Raderar en ansökan
         public void RemoveApplication()
         {
             Console.Write("Ange företagsnamn som du vill ta bort: ");

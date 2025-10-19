@@ -54,7 +54,7 @@
             }
         }
 
-
+        
         public void RemoveApplication()
         {
             Console.Write("Ange företagsnamn att ta bort: ");
