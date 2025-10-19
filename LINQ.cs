@@ -44,11 +44,11 @@
                         application.SvarsTid = DateTime.Today;
                     }
 
-                    Console.WriteLine("Status uppdaterad.");
+                    Console.WriteLine("Statusen har uppdateras.");
                 }
                 else
                 {
-                    Console.WriteLine("Ogiltig status. Uppdatering misslyckades.");
+                    Console.WriteLine("status är ej giltig. Uppdatering har  misslyckakats.");
                 }
 
             }
