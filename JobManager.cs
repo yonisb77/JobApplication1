@@ -12,7 +12,7 @@
             Console.Write("Företagsnamn: ");
             string företagsnamn = Console.ReadLine();
 
-            Console.Write("Tjänst/position: ");
+            Console.Write("Tjänst/Position: ");
             string position = Console.ReadLine();
 
 
