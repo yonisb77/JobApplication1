@@ -1,6 +1,6 @@
 ﻿namespace JobAPPTracker
 {
-
+    //Jobbklass för att hantera jobansökningar
     public class JobManager
     {
         List<JobApplication> ApplicationList = new List<JobApplication>();
@@ -12,7 +12,7 @@
             Console.Write("Företagsnamn: ");
             string företagsnamn = Console.ReadLine();
 
-            Console.Write("Tjänst/position: ");
+            Console.Write("Tjänst/Position: ");
             string position = Console.ReadLine();
 
 
@@ -49,7 +49,7 @@
 
         }
 
-
+        //visar alla ansökningar
         public void ShowAll()
         {
 
@@ -70,6 +70,7 @@
             }
         }
 
+        //visar antal ansökningar
         public void ShowStatistics()
         {
             Console.WriteLine($"Totalt antal ansökningar: {ApplicationList.Count}");
@@ -86,9 +87,10 @@
 
         }
 
+        //Uppdaterar status på ansökan av Rekryteraren
         public void UpdateStatus()
         {
-            Console.Write("Ange företagsnamn att uppdatera: ");
+            Console.Write("skriv företagsnamnet du vill uppdatera: ");
             string namn = Console.ReadLine();
 
             var application = ApplicationList.FirstOrDefault(a => a.FöretagsNamn.Equals(namn, StringComparison.OrdinalIgnoreCase));
@@ -118,10 +120,10 @@
             }
         }
 
-
+        //Raderar en ansökan
         public void RemoveApplication()
         {
-            Console.Write("Ange företagsnamn att ta bort: ");
+            Console.Write("Ange företagsnamn som du vill ta bort: ");
             string namn = Console.ReadLine();
 
             var tabort = ApplicationList.FirstOrDefault(a => a.FöretagsNamn.Equals(namn, StringComparison.OrdinalIgnoreCase));
@@ -129,7 +131,7 @@
             if (tabort != null)
             {
                 ApplicationList.Remove(tabort);
-                Console.WriteLine("Ansökan borttagen.");
+                Console.WriteLine("Ansökan har tagits bort");
             }
             else
             {
