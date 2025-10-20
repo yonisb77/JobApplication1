@@ -21,6 +21,8 @@ namespace JobAPPTracker
             Console.WriteLine($" Det har gått {dagar} dagar sedan ansökan skickades till {FöretagsNamn}. ");
         }
 
+
+        //Ansökningsoversikt
         public void GetSummary()
         {
             Console.WriteLine($"FöretagsNamn: {FöretagsNamn}");
@@ -33,8 +35,8 @@ namespace JobAPPTracker
             if (SvarsTid != null)
                 Console.WriteLine($"Svar mottaget: {SvarsTid.Value}");
             else
-                Console.WriteLine("Svar: Ej mottaget");
-            return;
+                Console.WriteLine("Svar: ej mottaget");
+            
         }
     }
 }
