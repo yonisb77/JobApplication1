@@ -4,7 +4,6 @@ namespace JobAPPTracker
     public class JobApplication
     {
         public enum Status { Ansökt, Intervju, Erbjudande, Nekad }
-
         public string FöretagsNamn { get; set; }
         public string Position { get; set; }
         public int Lön { get; set; }
@@ -21,6 +20,7 @@ namespace JobAPPTracker
             Console.WriteLine($" Det har gått {dagar} dagar sedan ansökan skickades till {FöretagsNamn}. ");
         }
 
+        
         public void GetSummary()
         {
             Console.WriteLine($"FöretagsNamn: {FöretagsNamn}");
